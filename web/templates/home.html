@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{%block body %}
+<center>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-md-3" style="margin-top:20px">
+            <form action="submit" method="post">{% csrf_token %}
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Enter String</span>
+                          </div>
+                          <input type="text" class="form-control" name="info"><br>
+                    </div>
+                    
+                    <button style="margin-top:20px" type="submit" class="btn btn-primary" value="Submit">Submit</button>
+                </form>
+        </div>
+    </div>
+    </div>
+    
+</center>
+{% endblock %}
